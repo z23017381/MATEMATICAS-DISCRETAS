@@ -1,0 +1,17 @@
+Escribe un programa que calcule el MCD de dos números dados a partir del algoritmo de Euclides:
+
+def mcd(a, b):
+ 
+
+  while b != 0:
+    a, b = b, a % b
+  return a
+
+
+num1 = int(input("Introduzca el primer número: "))
+num2 = int(input("Introduzca el segundo número: "))
+
+mcd = mcd(num1, num2)
+
+print(f"El MCD de {num1} y {num2} es: {mcd}")
+
