@@ -8,10 +8,10 @@ def mcd(a, b):
   return a
 
 
-num1 = int(input("Introduzca el primer número: "))
-num2 = int(input("Introduzca el segundo número: "))
+num1 = int(input("introduzca el primer numero: "))
+num2 = int(input("introduzca el segundo numero: "))
 
 mcd = mcd(num1, num2)
 
-print(f"El MCD de {num1} y {num2} es: {mcd}")
+print(f"el MCD de {num1} y {num2} es: {mcd}")
 
