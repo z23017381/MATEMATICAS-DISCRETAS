@@ -1,0 +1,23 @@
+def nCr(n, r):
+    if r > n // 2:
+        r = n - r
+
+    resultado = 1
+    for i in range(r):
+        resultado *= (n - i)
+        resultado //= (i + 1)
+    return resultado
+
+def imprimirTrianguloPascal(n):
+    for i in range(n):
+        for j in range(i + 1):
+            print(nCr(i, j), end=" ")
+        print()
+
+def main():
+    n = int(input("Introduzca el número de filas: "))
+
+    imprimirTrianguloPascal(n)
+
+if __name__ == "__main__":
+    main()
