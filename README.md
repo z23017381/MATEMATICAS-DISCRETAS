@@ -10,11 +10,14 @@ C = set([3, 6, 9, 12, 15])
 TABLA
 
 lista = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5}
+
 lista
 {1, 2, 3, 4, 5}
+
 conjunto = set(lista)
 conjunto
 {1, 2, 3, 4, 5}
+
 Operaciones
 Python proporciona operaciones y métodos para realizar operaciones básicas de conjuntos como unión, intersección, diferencia y diferencia simétrica.
 
@@ -28,10 +31,13 @@ El método union() se utiliza para unir dos conjuntos. El resultado de la operac
 
 La fórmula LaTex es:
 𝐶=𝐴∪𝐵=(𝑥:𝑥∈𝐴𝑜 𝑞𝑢𝑎𝑑𝑥∈𝐵)
+
 A | B
 {1, 2, 3, 4, 5, 6, 7}
+
 A.union(B)
 {1, 2, 3, 4, 5, 6, 7}
+
 Intersección
 la intersección de dos o más conjuntos es una operación que da como resultado un nuevo conjunto que contiene únicamente los elementos que son comunes a todos los conjuntos originales. La intersección de dos conjuntos A y B se denota por A ∩ B.
 
@@ -49,14 +55,19 @@ El método intersection() se utiliza para encontrar la intersección de dos conj
 
 La fórmula LaTex es:
 𝐶=𝐴∩𝐵={𝑥∈𝐴∧𝑥∈𝐵}
+
 A & B
 {3, 4, 5}
+
 A.intersection(B)
 {3, 4, 5}
+
 B & A
 {3, 4, 5}
+
 B.intersection(A)
 {3, 4, 5}
+
 Diferencia
 En teoría de conjuntos, la diferencia de dos conjuntos es una operación que da como resultado un nuevo conjunto que contiene todos los elementos del primer conjunto que no están en el segundo conjunto. La diferencia de dos conjuntos A y B se denota por A - B.
 
@@ -76,14 +87,19 @@ Ambas formas de realizar la diferencia de conjuntos son válidas y producen el m
 
 La fórmula LaTex es:
 𝐶=𝐴−𝐵={𝑥∈𝐴∧𝑥∉𝐵}
+
 A - B
 {1, 2}
+
 A.difference(B)
 {1, 2}
+
 B - A
 {6, 7}
+
 B.difference(A)
 {6, 7}
+
 Diferencia simétrica
 La diferencia simétrica de dos conjuntos es una operación que da como resultado un nuevo conjunto que contiene todos los elementos que pertenecen a uno de los dos conjuntos originales, pero no a ambos a la vez.
 
@@ -104,11 +120,15 @@ El método symmetric_difference() se utiliza para encontrar la diferencia simét
 La fórmula LaTex es:
 
 𝐶=𝐴△𝐵={𝑥∈(𝐴∪𝐵)∧𝑥∉(𝐴∩𝐵)}
+
 A ^ B
 {1, 2, 6, 7}
+
 A.symmetric_difference(B)
 {1, 2, 6, 7}
+
 B ^ A
 {1, 2, 6, 7}
+
 B.symmetric_difference(A)
 {1, 2, 6, 7}
